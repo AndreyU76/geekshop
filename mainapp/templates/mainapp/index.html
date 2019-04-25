@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{%  extends 'mainapp/base.html' %}
+{% block  title %}
     <title>Главная</title>
-</head>
-<body>
-<h1>Привет Жека  ккккк</h1>
-</body>
-</html>
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="index">Главная</h1>
+    <div>Привет {{ name }}</div>
+    <div>{%  now 'Y'%}</div>
+
+{% endblock %}
